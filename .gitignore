@@ -1,0 +1,81 @@
+# ----------------------------------------------------------------------
+# GLOBAL: IGNORAR ARCHIVOS Y CARPETAS GENERALES
+# ----------------------------------------------------------------------
+*.log
+*.bak
+*.cache
+*~
+[Tt]humbs.db
+.DS_Store
+
+# ----------------------------------------------------------------------
+# 1. .NET CORE / VISUAL STUDIO
+# ----------------------------------------------------------------------
+# Carpetas de compilación, esenciales de ignorar
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+**/TestResults/
+
+# Archivos de configuración de usuario y caché de VS/IDE
+*.user
+*.suo
+*.vssscc
+*.vspscc
+*.vshost.*
+.vs/ # Carpeta oculta de Visual Studio (necesaria para IntelliSense)
+
+# Paquetes NuGet y archivos de artefactos
+/packages/
+*.nupkg
+
+# Archivos de base de datos local
+*.mdf
+*.ldf
+*.sdf
+
+# ----------------------------------------------------------------------
+# 2. ANGULAR / NODE.JS
+# ----------------------------------------------------------------------
+# 2.1 Dependencias (MUY IMPORTANTE)
+/node_modules
+
+# 2.2 Archivos de salida de compilación
+/dist
+/build
+/out
+
+# 2.3 Archivos de log y caché de npm/yarn
+npm-debug.log*
+yarn-error.log
+.npm
+.yarn
+
+# 2.4 Variables de entorno
+.env
+.env.local
+
+# 2.5 Configuración de IDE (opcional, si no quieres compartir configuraciones de VS Code)
+.vscode/
+
+# 2.6 Archivos de Cypress o E2E
+cypress/videos/
+cypress/screenshots/
+
+# Archivos y carpetas de Visual Studio/IDE
+.vs/
+*.vspscc
+*.vssscc
+
+# Carpetas de Node
+node_modules/
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de compilación de Angular/TS (Generalmente /dist)
+/dist
+/out
